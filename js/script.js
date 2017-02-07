@@ -26,7 +26,7 @@ var menuItemHtml = "snippets/menu-item.html";
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
-  targetElem.innerHTML = html;
+  targetElem.innerHTML =html;
 };
 
 // Show loading icon inside element identified by 'selector'.
