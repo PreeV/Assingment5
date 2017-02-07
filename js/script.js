@@ -4,7 +4,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
     if (screenWidth < 768) {
-      $("#collapsable-nav").collapse('hide');
+      $("#collapsable-nav").collapse("hide");
     }
   });
 });
@@ -102,7 +102,7 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
        var chosenCategoryShortName = chooseRandomCategory(categories);
-       console.log(chosenCategoryShortName["short_name"]);
+       console.log(chosenCategoryShortName['short_name']);
 
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -116,8 +116,8 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //insertProperty();
-       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", 
-                                "'" + chosenCategoryShortName["short_name"] + "'");
+       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName", 
+                                "'" + chosenCategoryShortName['short_name'] + "'");
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
